@@ -27,7 +27,7 @@ const Contact = () => {
       await new Promise(resolve => setTimeout(resolve, 1500));
       toast({
         title: "Mensagem enviada com sucesso!",
-        description: "Obrigado por entrar em contato com a Gpreto. Responderemos em breve.",
+        description: "Obrigado por entrar em contato com a GPRETO. Responderemos em breve.",
         duration: 5000,
         className: "bg-green-500 text-white",
       });
@@ -69,13 +69,13 @@ const Contact = () => {
       link: "https://wa.me/5516997520110",
     },
     {
-      icon: <Mail className="h-6 w-6 text-purple-500" />,
+      icon: <Mail className="h-6 w-6 text-gray-500" />,
       title: "Email Principal",
       value: "contato@gpreto.site",
-      link: "mailto:contato@gpreto.site",
+      link: "mailto:contato@GPRETO.site",
     },
     {
-      icon: <MapPin className="h-6 w-6 text-red-500" />,
+      icon: <MapPin className="h-6 w-6 text-gray-500" />,
       title: "Localização",
       value: "Atendemos todo o Brasil",
       link: "#",
@@ -101,7 +101,7 @@ const Contact = () => {
             custom={0}
             className="text-3xl md:text-4xl font-bold mb-4"
           >
-            Fale com a <span className="gradient-text">gpreto</span>
+            Fale com a <span className="gradient-text">GPRETO</span>
           </motion.h2>
           <motion.div
             variants={fadeInUpVariants}
@@ -234,7 +234,7 @@ const Contact = () => {
                       {info.icon}
                     </div>
                     <div>
-                      <h4 className="font-medium text-gray-800 dark:text-gray-200 group-hover:text-gray-600 transition-colors">{info.title}</h4>
+                      <h4 className="font-medium text-gray-800 dark:text-gray-200 group-hover:text-gray-600 dark:group-hover:text-gray-100 transition-colors">{info.title}</h4>
                       <p className="text-sm text-gray-600 dark:text-gray-400">{info.value}</p>
                     </div>
                   </a>

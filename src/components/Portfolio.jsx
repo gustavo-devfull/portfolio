@@ -9,7 +9,7 @@ const portfolioItems = [
     id: 1,
     title: "Dra. Andreza Gilio",
     category: "Site Onepage",
-    imageUrl: "https://storage.googleapis.com/hostinger-horizons-assets-prod/2cfb1b03-1837-40fe-acc1-5b06b47cd404/deac94189ee7438fe1185b65a4023b02.png",
+    imageUrl: "/andreza.webp",
     imageDescription: "Site da Dra. Andreza Gilio",
     link: "andrezagilio.com.br",
     imageCrop: { x: 0, y: 0, width: 280, height: 180 } 
@@ -18,52 +18,52 @@ const portfolioItems = [
     id: 2,
     title: "Asksuite",
     category: "Portal Institucional",
-    imageUrl: "https://storage.googleapis.com/hostinger-horizons-assets-prod/2cfb1b03-1837-40fe-acc1-5b06b47cd404/deac94189ee7438fe1185b65a4023b02.png",
+    imageUrl: "/asksuite.webp",
     imageDescription: "Portal da Asksuite",
     link: "asksuite.com",
-    imageCrop: { x: 290, y: 0, width: 280, height: 180 }
+    imageCrop: { x: 0, y: 0, width: 280, height: 180 }
   },
   {
     id: 3,
     title: "Mori",
     category: "Site Institucional",
-    imageUrl: "https://storage.googleapis.com/hostinger-horizons-assets-prod/2cfb1b03-1837-40fe-acc1-5b06b47cd404/deac94189ee7438fe1185b65a4023b02.png",
+    imageUrl: "/mori1.webp",
     imageDescription: "Site da mori",
     link: "moribr.com",
-    imageCrop: { x: 580, y: 0, width: 280, height: 180 }
+    imageCrop: { x: 0, y: 0, width: 280, height: 180 }
   },
   {
     id: 4,
     title: "takeoff by hands",
     category: "Landing Page",
-    imageUrl: "https://storage.googleapis.com/hostinger-horizons-assets-prod/2cfb1b03-1837-40fe-acc1-5b06b47cd404/deac94189ee7438fe1185b65a4023b02.png",
+    imageUrl: "/hands.webp",
     imageDescription: "Landing Page takeoff by hands",
     link: "hands.ag/takeoff",
-    imageCrop: { x: 870, y: 0, width: 280, height: 180 }
+    imageCrop: { x: 0, y: 0, width: 280, height: 180 }
   },
   {
     id: 5,
     title: "Escola de Enfermagem USP",
     category: "Portal Institucional",
-    imageUrl: "https://storage.googleapis.com/hostinger-horizons-assets-prod/2cfb1b03-1837-40fe-acc1-5b06b47cd404/deac94189ee7438fe1185b65a4023b02.png",
+    imageUrl: "/eusp.webp",
     imageDescription: "Portal da Escola de Enfermagem USP",
     link: "ee.usp.br",
-    imageCrop: { x: 0, y: 230, width: 280, height: 180 }
+    imageCrop: { x: 0, y: 0, width: 280, height: 180 }
   },
   {
     id: 6,
     title: "Video Imagem",
     category: "Site Onepage",
-    imageUrl: "https://storage.googleapis.com/hostinger-horizons-assets-prod/2cfb1b03-1837-40fe-acc1-5b06b47cd404/deac94189ee7438fe1185b65a4023b02.png",
+    imageUrl: "/video.webp",
     imageDescription: "Site Video Imagem",
     link: "videoimagem.com",
-    imageCrop: { x: 290, y: 230, width: 280, height: 180 }
+    imageCrop: { x: 0, y: 0, width: 280, height: 180 }
   },
   {
     id: 7,
     title: "Rocket Science",
     category: "Site Institucional",
-    imageUrl: "https://storage.googleapis.com/hostinger-horizons-assets-prod/2cfb1b03-1837-40fe-acc1-5b06b47cd404/deac94189ee7438fe1185b65a4023b02.png",
+    imageUrl: "/rocket.webp",
     imageDescription: "Site da Rocket Science",
     link: "rocketscience.tech",
     imageCrop: { x: 580, y: 230, width: 280, height: 180 }
@@ -72,46 +72,46 @@ const portfolioItems = [
     id: 8,
     title: "Odonto Lógica",
     category: "Site Institucional",
-    imageUrl: "https://storage.googleapis.com/hostinger-horizons-assets-prod/2cfb1b03-1837-40fe-acc1-5b06b47cd404/deac94189ee7438fe1185b65a4023b02.png",
+    imageUrl: "/odonto.webp",
     imageDescription: "Site da Odonto Lógica",
     link: "odontologicaavare.com.br",
-    imageCrop: { x: 870, y: 230, width: 280, height: 180 }
+    imageCrop: { x: 0, y: 0, width: 280, height: 180 }
   },
   {
     id: 9,
-    title: "Green Domus",
-    category: "Site Institucional",
-    imageUrl: "https://storage.googleapis.com/hostinger-horizons-assets-prod/2cfb1b03-1837-40fe-acc1-5b06b47cd404/deac94189ee7438fe1185b65a4023b02.png",
-    imageDescription: "Site da Green Domus",
-    link: "greendomus.com.br",
-    imageCrop: { x: 0, y: 460, width: 280, height: 180 }
+    title: "ThinkRider",
+    category: "Site Institucional e e-commerce",
+    imageUrl: "/mori.webp",
+    imageDescription: "Site da ThinkRider Brasil",
+    link: "thinkrider.com.br",
+    imageCrop: { x: 0, y: 0, width: 280, height: 180 }
   },
   {
     id: 10,
     title: "PX Controlling Services",
     category: "Site Institucional",
-    imageUrl: "https://storage.googleapis.com/hostinger-horizons-assets-prod/2cfb1b03-1837-40fe-acc1-5b06b47cd404/deac94189ee7438fe1185b65a4023b02.png",
+    imageUrl: "/pxcs.webp",
     imageDescription: "Site da PX Controlling Services",
     link: "pxcs.com.br/en",
-    imageCrop: { x: 290, y: 460, width: 280, height: 180 }
+    imageCrop: { x: 0, y: 0, width: 280, height: 180 }
   },
   {
     id: 11,
     title: "ShareHub",
     category: "Site Onepage",
-    imageUrl: "https://storage.googleapis.com/hostinger-horizons-assets-prod/2cfb1b03-1837-40fe-acc1-5b06b47cd404/deac94189ee7438fe1185b65a4023b02.png",
+    imageUrl: "/share.webp",
     imageDescription: "Site da ShareHub",
     link: "sharehub.com.br",
-    imageCrop: { x: 580, y: 460, width: 280, height: 180 }
+    imageCrop: { x: 0, y: 0, width: 280, height: 180 }
   },
   {
     id: 12,
     title: "NeuroTEAid",
     category: "Landing Page",
-    imageUrl: "https://storage.googleapis.com/hostinger-horizons-assets-prod/2cfb1b03-1837-40fe-acc1-5b06b47cd404/deac94189ee7438fe1185b65a4023b02.png",
+    imageUrl: "/neuro.webp",
     imageDescription: "Landing Page NeuroTEAid",
     link: "neuroteaid.com",
-    imageCrop: { x: 870, y: 460, width: 280, height: 180 }
+    imageCrop: { x: 0, y: 0, width: 280, height: 180 }
   },
 ];
 
@@ -164,7 +164,7 @@ const Portfolio = () => {
             custom={2}
             className="max-w-2xl mx-auto text-gray-600 dark:text-gray-300"
           >
-            Confira alguns dos projetos incríveis que desenvolvemos para nossos clientes. Soluções digitais que geram resultados e encantam.
+            Confira alguns dos projetos incríveis que desenvolvemos para nossos clientes. <br/> Soluções digitais que geram resultados e encantam.
           </motion.p>
         </motion.div>
 
@@ -182,15 +182,15 @@ const Portfolio = () => {
               <Card className="overflow-hidden card-hover h-full flex flex-col shadow-lg border-transparent hover:border-gray-900/50 transition-all duration-300 bg-white dark:bg-gray-800">
                 <CardHeader className="p-0">
                   <div 
-                    className="aspect-[3/2] w-full bg-gray-200 dark:bg-gray-700 overflow-hidden relative"
+                    className="aspect-[16/9] w-full bg-gray-200 dark:bg-gray-700 overflow-hidden relative"
                     style={{
                       backgroundImage: `url(${item.imageUrl})`,
                       backgroundPosition: `-${item.imageCrop.x}px -${item.imageCrop.y}px`,
-                      backgroundSize: `auto ${item.imageCrop.height * (1152 / item.imageCrop.width)}px` // Assuming original image width is 1152px
+                      backgroundSize: `auto ${item.imageCrop.height * (270 / item.imageCrop.width)}px` // Assuming original image width is 1152px
                     }}
                   >
                     <div className="absolute inset-0 bg-black/10 flex items-center justify-center opacity-0 hover:opacity-100 transition-opacity duration-300">
-                       <ImageIcon className="h-12 w-12 text-white/70" />
+                      
                     </div>
                   </div>
                 </CardHeader>

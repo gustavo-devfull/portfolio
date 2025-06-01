@@ -100,8 +100,8 @@ const Navbar = () => {
                 href={`#${link.id}`}
                 className={`nav-link px-3 py-2 rounded-md text-sm font-medium transition-all duration-200 ease-in-out flex items-center space-x-2 ${
                   activeSection === link.id 
-                  ? "bg-primary/10 text-primary dark:bg-primary/20 dark:text-primary-foreground" 
-                  : "text-gray-600 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-800 hover:text-primary dark:hover:text-primary-foreground"
+                  ? "bg-gray/10 text-gray dark:bg-gray/20 dark:text-gray-foreground" 
+                  : "text-gray-600 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-800 hover:text-gray dark:hover:text-gray-foreground"
                 }`}
                 initial={{ opacity: 0, y: -20 }}
                 animate={{ opacity: 1, y: 0 }}
@@ -162,8 +162,8 @@ const Navbar = () => {
                   href={`#${link.id}`}
                   className={`flex items-center space-x-3 py-3 px-3 text-base font-medium rounded-md transition-colors duration-200 ${
                     activeSection === link.id
-                      ? "bg-primary/10 text-primary dark:bg-primary/20 dark:text-primary-foreground"
-                      : "text-gray-700 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-800 hover:text-primary dark:hover:text-primary-foreground"
+                      ? "bg-gray/10 text-gray dark:bg-gray/20 dark:text-gray-foreground"
+                      : "text-gray-700 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-800 hover:text-gray dark:hover:text-gray-foreground"
                   }`}
                   onClick={(e) => {
                     e.preventDefault();
