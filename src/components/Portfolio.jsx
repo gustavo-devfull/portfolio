@@ -203,7 +203,7 @@ const Portfolio = () => {
                     variant="outline"
                     size="sm"
                     className="w-full border-gray-900 text-gray-600 hover:bg-gray-400 dark:border-gray-900 dark:text-gray-600 dark:hover:bg-gray-400"
-                    onClick={() => window.open(`http://${item.link}`, "_blank")}
+                    onClick={() => window.open(`https://${item.link}`, "_blank")}
                   >
                     Visitar Site <ExternalLink className="ml-2 h-4 w-4" />
                   </Button>
