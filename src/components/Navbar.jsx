@@ -85,7 +85,7 @@ const Navbar = () => {
                 scrollToSection("home");
               }}
             >
-              <span className="mr-2 bg-gradient-to-r from-blue-600 to-purple-600 text-white rounded-md px-2 py-0.5 text-xl">G</span>preto
+              <span className="mr-2 bg-gradient-to-r from-black to-gray-800 text-white rounded-md px-2 py-0.5 text-xl">gpreto</span>
             </a>
           </motion.div>
 
