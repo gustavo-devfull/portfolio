@@ -79,7 +79,7 @@ const Hero = () => {
           >
             <Button
               size="lg"
-              className="bg-gradient-to-r from-grey-600 to-grey-700 hover:from-grey-700 hover:to-grey-700 text-white shadow-lg"
+              className="bg-gradient-to-r from-gray-600 to-gray-700 hover:from-gray-700 hover:to-gray-800 text-white shadow-lg"
               onClick={scrollToContact}
             >
               Solicite um Orçamento
@@ -87,7 +87,7 @@ const Hero = () => {
             <Button
               variant="outline"
               size="lg"
-              className="border-2 border-primary text-gray-600 hover:bg-primary/5 dark:border-primary dark:text-gray-600 dark:hover:bg-primary/10 shadow-lg"
+              className="border-2 border-black text-gray-600 hover:bg-gray-200 dark:border-black dark:text-gray-200 dark:hover:bg-gray-600 shadow-lg"
               onClick={scrollToServices}
             >
               Nossos Serviços

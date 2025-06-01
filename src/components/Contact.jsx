@@ -24,7 +24,7 @@ const Contact = () => {
     setIsSubmitting(true);
 
     try {
-      await new Promise(resolve => setTimeout(resolve, 1500)); 
+      await new Promise(resolve => setTimeout(resolve, 1500));
       toast({
         title: "Mensagem enviada com sucesso!",
         description: "Obrigado por entrar em contato com a Gpreto. Responderemos em breve.",
@@ -64,28 +64,27 @@ const Contact = () => {
   const contactInfo = [
     {
       icon: <Phone className="h-6 w-6 text-gray-500" />,
-    graye: "Telefone / WhatsApp",
-      value: "+55 (XX) XXXXX-XXXX",
-      link: "https://wa.me/55XXXXXXXXXXX", 
+      title: "Telefone / WhatsApp",
+      value: "+55 (16) 99752-0110",
+      link: "https://wa.me/5516997520110",
     },
     {
       icon: <Mail className="h-6 w-6 text-purple-500" />,
       title: "Email Principal",
-      value: "contato@gpreto.com.br",
-      link: "mailto:contato@gpreto.com.br",
+      value: "contato@gpreto.site",
+      link: "mailto:contato@gpreto.site",
     },
     {
       icon: <MapPin className="h-6 w-6 text-red-500" />,
-      title: "Localização (Atendimento Online)",
+      title: "Localização",
       value: "Atendemos todo o Brasil",
-      link: "#", 
+      link: "#",
     },
   ];
 
   const socialLinks = [
-    { icon: <Linkedin size={24} />, label: "LinkedIn", url: "https://linkedin.com/company/gpreto" },
-    { icon: <Instagram size={24} />, label: "Instagram", url: "https://instagram.com/gpreto" },
-    { icon: <Facebook size={24} />, label: "Facebook", url: "https://facebook.com/gpreto" },
+    { icon: <Instagram size={24} />, label: "Instagram", url: "https://instagram.com/gpreto.site" },
+
   ];
 
   return (
@@ -102,12 +101,12 @@ const Contact = () => {
             custom={0}
             className="text-3xl md:text-4xl font-bold mb-4"
           >
-            Fale com a <span className="gradient-text">Gpreto</span>
+            Fale com a <span className="gradient-text">gpreto</span>
           </motion.h2>
           <motion.div
             variants={fadeInUpVariants}
             custom={1}
-            className="w-20 h-1 bg-gradient-to-r from-gray-600 to-purplegrayx-auto mb-6"
+            className="w-20 h-1 bg-gradient-to-r from-gray-400 to-gray-900 mx-auto mb-6"
           ></motion.div>
           <motion.p
             variants={fadeInUpVariants}
@@ -194,7 +193,7 @@ const Contact = () => {
                 type="submit"
                 disabled={isSubmitting}
                 size="lg"
-                className="w-full bg-gradient-to-r from-gray-600 to-purplegrayover:from-gray-700 hover:to-gray-700 text-white shadow-lg py-3 text-base"
+                className="w-full bg-gradient-to-r from-gray-600 to-gray-800 over:from-gray-700 hover:to-gray-400 text-white shadow-lg py-3 text-base"
               >
                 {isSubmitting ? (
                   <div className="flex items-center justify-center">
@@ -217,7 +216,7 @@ const Contact = () => {
             initial={{ opacity: 0, x: 50 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true, margin: "-100px" }}
-            transition={{ duration: 0.5, delay:0.2 }}
+            transition={{ duration: 0.5, delay: 0.2 }}
             className="space-y-8"
           >
             <div className="bg-white dark:bg-gray-800/50 p-8 rounded-xl shadow-xl">
@@ -243,22 +242,28 @@ const Contact = () => {
               </div>
             </div>
             <div className="bg-white dark:bg-gray-800/50 p-8 rounded-xl shadow-xl">
-              <h3 className="text-2xl font-semibold mb-6">Siga-nos</h3>
-              <div className="flex space-x-4">
-                {socialLinks.map(social => (
-                  <a 
-                    key={social.label} 
-                    href={social.url} 
-                    target="_blank" 
-                    rel="noopener noreferrer" 
-                    aria-label={social.label}
-                    className="p-3 bg-gray-100 dark:bg-gray-700 rounded-full text-gray-600 dark:text-gray-300 hover:text-white hover:bg-gradient-to-r hover:from-gray-500 hover:to-gray-600 transition-all duration-300 transform hover:scale-110"
-                  >
-                    {social.icon}
-                  </a>
-                ))}
+              <div className="flex items-center justify-between flex-wrap gap-4 mb-4">
+                <h3 className="text-2xl font-semibold flex items-center gap-2">
+                  Siga no Instagram
+                </h3>
+
+                <div className="flex space-x-4">
+                  {socialLinks.map(social => (
+                    <a
+                      key={social.label}
+                      href={social.url}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      aria-label={social.label}
+                      className="p-3 bg-gray-100 dark:bg-gray-700 rounded-full text-gray-600 dark:text-gray-300 hover:text-white hover:bg-gradient-to-r hover:from-gray-500 hover:to-gray-600 transition-all duration-300 transform hover:scale-110"
+                    >
+                      {social.icon}
+                    </a>
+                  ))}
+                </div>
               </div>
             </div>
+
           </motion.div>
         </div>
       </div>

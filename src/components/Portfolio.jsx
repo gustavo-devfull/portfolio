@@ -28,7 +28,7 @@ const portfolioItems = [
     title: "Mori",
     category: "Site Institucional",
     imageUrl: "https://storage.googleapis.com/hostinger-horizons-assets-prod/2cfb1b03-1837-40fe-acc1-5b06b47cd404/deac94189ee7438fe1185b65a4023b02.png",
-    imageDescription: "Site da Mori",
+    imageDescription: "Site da mori",
     link: "moribr.com",
     imageCrop: { x: 580, y: 0, width: 280, height: 180 }
   },
@@ -157,7 +157,7 @@ const Portfolio = () => {
           <motion.div
             variants={fadeInUpVariants}
             custom={1}
-            className="w-20 h-1 bg-gradient-to-r from-blue-600 to-purple-600 mx-auto mb-6"
+            className="w-20 h-1 bg-gradient-to-r from-gray-600 to-gray-900 mx-auto mb-6"
           ></motion.div>
           <motion.p
             variants={fadeInUpVariants}
@@ -179,7 +179,7 @@ const Portfolio = () => {
               custom={index}
               className="h-full"
             >
-              <Card className="overflow-hidden card-hover h-full flex flex-col shadow-lg border-transparent hover:border-primary/50 transition-all duration-300 bg-white dark:bg-gray-800">
+              <Card className="overflow-hidden card-hover h-full flex flex-col shadow-lg border-transparent hover:border-gray-900/50 transition-all duration-300 bg-white dark:bg-gray-800">
                 <CardHeader className="p-0">
                   <div 
                     className="aspect-[3/2] w-full bg-gray-200 dark:bg-gray-700 overflow-hidden relative"
@@ -195,14 +195,14 @@ const Portfolio = () => {
                   </div>
                 </CardHeader>
                 <CardContent className="flex-grow p-4">
-                  <CardDescription className="text-xs uppercase tracking-wider text-primary mb-1">{item.category}</CardDescription>
+                  <CardDescription className="text-xs uppercase tracking-wider text-gray-400 mb-1">{item.category}</CardDescription>
                   <CardTitle className="text-lg font-semibold mb-2">{item.title}</CardTitle>
                 </CardContent>
                 <CardFooter className="p-4 pt-0">
                   <Button
                     variant="outline"
                     size="sm"
-                    className="w-full border-primary text-primary hover:bg-primary/10 dark:border-primary dark:text-primary dark:hover:bg-primary/20"
+                    className="w-full border-gray-900 text-gray-600 hover:bg-gray-400 dark:border-gray-900 dark:text-gray-600 dark:hover:bg-gray-400"
                     onClick={() => window.open(`http://${item.link}`, "_blank")}
                   >
                     Visitar Site <ExternalLink className="ml-2 h-4 w-4" />
@@ -223,7 +223,7 @@ const Portfolio = () => {
         >
           <Button
             size="lg"
-            className="bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white shadow-lg px-10 py-6 text-lg"
+            className="bg-gradient-to-r from-gray-600 to-gray-600 hover:from-gray-700 hover:to-gray-700 text-white shadow-lg px-10 py-6 text-lg"
             onClick={scrollToContact}
           >
             Gostou? Vamos Criar o Seu Projeto!
