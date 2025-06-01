@@ -85,7 +85,11 @@ const Navbar = () => {
                 scrollToSection("home");
               }}
             >
-              <span className="mr-2 bg-gradient-to-r from-black to-gray-800 text-white rounded-md px-2 py-0.5 text-xl">gpreto</span>
+              <img 
+  src="/logo-gpreto.png" 
+  alt="Logo GPreto"
+  className="h-12"
+/>
             </a>
           </motion.div>
 

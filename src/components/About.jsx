@@ -39,7 +39,7 @@ const About = () => {
           <motion.div
             variants={fadeInUpVariants}
             custom={1}
-            className="w-20 h-1 bg-gradient-to-r from-blue-600 to-purple-600 mx-auto mb-6"
+            className="w-20 h-1 bg-gradient-to-r from-gray-600 to-gray-600 mx-auto mb-6"
           ></motion.div>
           <motion.p
             variants={fadeInUpVariants}
@@ -60,7 +60,7 @@ const About = () => {
           >
             <div>
               <motion.h3 variants={fadeInUpVariants} custom={0} className="text-2xl font-bold mb-3 flex items-center">
-                <Users className="mr-3 h-7 w-7 text-primary" /> Nossa Empresa
+                <Users className="mr-3 h-7 w-7 text-gray-600" /> Nossa Empresa
               </motion.h3>
               <motion.p variants={fadeInUpVariants} custom={1} className="text-gray-600 dark:text-gray-300 mb-2">
                 Combinando pontualidade e criatividade, nossa equipe altamente capacitada cria soluções personalizadas para sua empresa, seja uma landing page, site institucional ou e-commerce, com foco em atrair e reter clientes.
@@ -72,12 +72,12 @@ const About = () => {
             
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
               <motion.div variants={fadeInUpVariants} custom={3} className="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-md card-hover">
-                <Briefcase className="h-10 w-10 text-blue-500 mb-3" />
+                <Briefcase className="h-10 w-10 text-gray-500 mb-3" />
                 <h4 className="text-lg font-semibold mb-1">20+ Anos de Experiência</h4>
                 <p className="text-sm text-gray-500 dark:text-gray-400">No mercado digital, entregando resultados.</p>
               </motion.div>
               <motion.div variants={fadeInUpVariants} custom={4} className="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-md card-hover">
-                <Award className="h-10 w-10 text-purple-500 mb-3" />
+                <Award className="h-10 w-10 text-gray-500 mb-3" />
                 <h4 className="text-lg font-semibold mb-1">Qualidade e Rapidez</h4>
                 <p className="text-sm text-gray-500 dark:text-gray-400">Soluções eficientes com foco no cliente.</p>
               </motion.div>
@@ -93,7 +93,7 @@ const About = () => {
           >
             <div>
               <motion.h3 variants={fadeInUpVariants} custom={0} className="text-2xl font-bold mb-4 flex items-center">
-                <UserCheck className="mr-3 h-7 w-7 text-primary" /> Conheça o Fundador
+                <UserCheck className="mr-3 h-7 w-7 text-gray-600" /> Conheça o Fundador
               </motion.h3>
               <div className="flex flex-col sm:flex-row items-center gap-6 mb-4 p-6 bg-white dark:bg-gray-800 rounded-lg shadow-md">
                 <div className="flex-shrink-0">
@@ -101,10 +101,10 @@ const About = () => {
                 </div>
                 <div>
                   <h4 className="text-xl font-semibold">Gustavo Santos</h4>
-                  <p className="text-primary dark:text-primary-light text-sm">Desenvolvedor Web, Designer e Fotógrafo</p>
+                  <p className="text-gray-600 dark:text-gray-300 text-sm">Desenvolvedor Web, Designer e Fotógrafo</p>
                   <div className="flex space-x-2 mt-2">
-                     <a href="https://linkedin.com/in/seu-linkedin-aqui" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn de Gustavo Santos" className="text-gray-500 hover:text-primary"><Linkedin size={20}/></a>
-                     <a href="https://github.com/seu-github-aqui" target="_blank" rel="noopener noreferrer" aria-label="GitHub de Gustavo Santos" className="text-gray-500 hover:text-primary"><Github size={20}/></a>
+                     <a href="https://linkedin.com/in/seu-linkedin-aqui" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn de Gustavo Santos" className="text-gray-500 hover:text-gray-600"><Linkedin size={20}/></a>
+                     <a href="https://github.com/seu-github-aqui" target="_blank" rel="noopener noreferrer" aria-label="GitHub de Gustavo Santos" className="text-gray-500 hover:text-gray-600"><Github size={20}/></a>
                   </div>
                 </div>
               </div>
@@ -115,11 +115,11 @@ const About = () => {
 
             <div>
               <motion.h4 variants={fadeInUpVariants} custom={2} className="text-xl font-semibold mb-3 flex items-center">
-                <Tool className="mr-2 h-6 w-6 text-primary" /> Tecnologias Dominadas
+                <Tool className="mr-2 h-6 w-6 text-gray-600" /> Tecnologias Dominadas
               </motion.h4>
               <motion.div variants={fadeInUpVariants} custom={3} className="flex flex-wrap gap-2">
                 {gustavoSkills.map(skill => (
-                  <span key={skill} className="bg-gradient-to-r from-blue-100 to-purple-100 dark:from-blue-900/50 dark:to-purple-900/50 text-blue-700 dark:text-blue-300 px-3 py-1 rounded-full text-sm font-medium shadow-sm">
+                  <span key={skill} className="bg-gradient-to-r from-gray-100 to-gray-100 dark:from-gray-900/50 dark:to-gray-900/50 text-gray-700 dark:text-gray-300 px-3 py-1 rounded-full text-sm font-medium shadow-sm">
                     {skill}
                   </span>
                 ))}
@@ -136,7 +136,7 @@ const About = () => {
         >
           <Button
             size="lg"
-            className="bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white shadow-lg"
+            className="bg-gradient-to-r from-gray-600 to-gray-600 hover:from-gray-700 hover:to-gray-700 text-white shadow-lg"
             onClick={() => {
               const contactSection = document.getElementById("contact");
               if (contactSection) {

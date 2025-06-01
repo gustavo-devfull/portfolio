@@ -35,18 +35,20 @@ const Hero = () => {
             transition={{ duration: 0.5 }}
             className="mb-6"
           >
-            <div className="w-32 h-32 md:w-40 md:h-40 rounded-full overflow-hidden border-4 border-primary/20 shadow-xl mx-auto bg-gradient-to-br from-blue-500 to-purple-600 flex items-center justify-center">
-              <span className="text-5xl md:text-6xl font-bold text-white">G</span>
-            </div>
+<img 
+  src="/logo-gpreto.png" 
+  alt="Logo GPreto"
+  className="h-32"
+/>
           </motion.div>
 
           <motion.h1
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.1 }}
-            className="text-4xl md:text-5xl lg:text-6xl font-light mb-4"
+            className="text-2xl md:text-3xl lg:text-4xl font-light mb-4"
           >
-          gpreto   <span className="gradient-text">Design e Soluções Digitais</span>
+          Design e Soluções Digitais
           </motion.h1>
 
           <motion.div
@@ -77,7 +79,7 @@ const Hero = () => {
           >
             <Button
               size="lg"
-              className="bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white shadow-lg"
+              className="bg-gradient-to-r from-grey-600 to-grey-700 hover:from-grey-700 hover:to-grey-700 text-white shadow-lg"
               onClick={scrollToContact}
             >
               Solicite um Orçamento
@@ -85,7 +87,7 @@ const Hero = () => {
             <Button
               variant="outline"
               size="lg"
-              className="border-2 border-primary text-primary hover:bg-primary/5 dark:border-primary dark:text-primary dark:hover:bg-primary/10 shadow-lg"
+              className="border-2 border-primary text-gray-600 hover:bg-primary/5 dark:border-primary dark:text-gray-600 dark:hover:bg-primary/10 shadow-lg"
               onClick={scrollToServices}
             >
               Nossos Serviços

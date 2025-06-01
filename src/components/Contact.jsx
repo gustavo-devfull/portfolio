@@ -63,8 +63,8 @@ const Contact = () => {
 
   const contactInfo = [
     {
-      icon: <Phone className="h-6 w-6 text-blue-500" />,
-      title: "Telefone / WhatsApp",
+      icon: <Phone className="h-6 w-6 text-gray-500" />,
+    graye: "Telefone / WhatsApp",
       value: "+55 (XX) XXXXX-XXXX",
       link: "https://wa.me/55XXXXXXXXXXX", 
     },
@@ -107,7 +107,7 @@ const Contact = () => {
           <motion.div
             variants={fadeInUpVariants}
             custom={1}
-            className="w-20 h-1 bg-gradient-to-r from-blue-600 to-purple-600 mx-auto mb-6"
+            className="w-20 h-1 bg-gradient-to-r from-gray-600 to-purplegrayx-auto mb-6"
           ></motion.div>
           <motion.p
             variants={fadeInUpVariants}
@@ -194,7 +194,7 @@ const Contact = () => {
                 type="submit"
                 disabled={isSubmitting}
                 size="lg"
-                className="w-full bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white shadow-lg py-3 text-base"
+                className="w-full bg-gradient-to-r from-gray-600 to-purplegrayover:from-gray-700 hover:to-gray-700 text-white shadow-lg py-3 text-base"
               >
                 {isSubmitting ? (
                   <div className="flex items-center justify-center">
@@ -235,7 +235,7 @@ const Contact = () => {
                       {info.icon}
                     </div>
                     <div>
-                      <h4 className="font-medium text-gray-800 dark:text-gray-200 group-hover:text-primary transition-colors">{info.title}</h4>
+                      <h4 className="font-medium text-gray-800 dark:text-gray-200 group-hover:text-gray-600 transition-colors">{info.title}</h4>
                       <p className="text-sm text-gray-600 dark:text-gray-400">{info.value}</p>
                     </div>
                   </a>
@@ -252,7 +252,7 @@ const Contact = () => {
                     target="_blank" 
                     rel="noopener noreferrer" 
                     aria-label={social.label}
-                    className="p-3 bg-gray-100 dark:bg-gray-700 rounded-full text-gray-600 dark:text-gray-300 hover:text-white hover:bg-gradient-to-r hover:from-blue-500 hover:to-purple-600 transition-all duration-300 transform hover:scale-110"
+                    className="p-3 bg-gray-100 dark:bg-gray-700 rounded-full text-gray-600 dark:text-gray-300 hover:text-white hover:bg-gradient-to-r hover:from-gray-500 hover:to-gray-600 transition-all duration-300 transform hover:scale-110"
                   >
                     {social.icon}
                   </a>
