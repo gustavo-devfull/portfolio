@@ -145,7 +145,7 @@ const Contact = () => {
           <motion.div
             variants={fadeInUpVariants}
             custom={1}
-            className="w-20 h-1 bg-gradient-to-r from-gray-400 to-gray-900 mx-auto mb-6"
+            className="w-20 h-1 bg-gradient-to-r from-gray-400 to-gray-800  dark:from-gray-500 dark:to-gray-700 mx-auto mb-6"
           ></motion.div>
           <motion.p
             variants={fadeInUpVariants}

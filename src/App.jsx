@@ -25,14 +25,14 @@ function App() {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 0.5, delay: 0.5 }}
-          className="py-8 bg-gray-100 dark:bg-gray-800 text-center"
+          className="py-8 bg-gray-200 dark:bg-gray-900 text-center"
         >
           <div className="container mx-auto px-4 sm:px-6 lg:px-8">
             <p className="text-sm text-gray-600 dark:text-gray-400">
-              &copy; {new Date().getFullYear()} Gpreto Design e Soluções Digitais. Todos os direitos reservados.
+              &copy; {new Date().getFullYear()} GPRETO Design e Soluções Digitais. Todos os direitos reservados.
             </p>
-            <p className="text-xs text-gray-500 dark:text-gray-500 mt-1">
-              Desenvolvido com <span className="text-red-500">❤️</span> pela Gpreto.
+            <p className="text-sm text-gray-600 dark:text-gray-400 mt-1">
+              Desenvolvido em React e Tailwind com <span className="text-red-500">❤️</span> pela GPRETO.
             </p>
           </div>
         </motion.footer>

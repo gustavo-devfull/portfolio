@@ -85,7 +85,7 @@ const ServicesComponent = () => {
           <motion.div
             variants={fadeInUpVariants}
             custom={1}
-            className="w-20 h-1 bg-gradient-to-r from-gray-600 to-gray-800 mx-auto mb-6"
+            className="w-20 h-1 bg-gradient-to-r from-gray-400 to-gray-800  dark:from-gray-500 dark:to-gray-700 mx-auto mb-6"
           ></motion.div>
           <motion.p
             variants={fadeInUpVariants}
@@ -131,7 +131,7 @@ const ServicesComponent = () => {
                   </div>
                    <Button 
                       variant="outline" 
-                      className="w-full border-gray text-gray hover:bg-gray/10 dark:border-gray dark:text-gray dark:hover:bg-gray/20"
+                      className="w-full border-gray text-gray hover:bg-gray-100 dark:border-gray-800 dark:text-gray dark:hover:bg-gray-900"
                       onClick={scrollToContact}
                     >
                       Saiba Mais <ExternalLink className="ml-2 h-4 w-4" />
@@ -151,10 +151,10 @@ const ServicesComponent = () => {
         >
           <Button
             size="lg"
-            className="bg-gradient-to-r from-gray-600 to-gray-800 hover:from-gray-700 hover:to-purple-700 text-white shadow-lg px-10 py-6 text-lg"
+            className="bg-gradient-to-r from-gray-600 to-gray-800 hover:from-gray-800 hover:to-gray-600 text-white shadow-lg px-10 py-6 text-base"
             onClick={scrollToContact}
           >
-            Transforme Sua Presença Online Agora!
+            Transforme Sua Presença Online!
           </Button>
         </motion.div>
       </div>

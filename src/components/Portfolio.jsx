@@ -157,7 +157,7 @@ const Portfolio = () => {
           <motion.div
             variants={fadeInUpVariants}
             custom={1}
-            className="w-20 h-1 bg-gradient-to-r from-gray-600 to-gray-900 mx-auto mb-6"
+            className="w-20 h-1 bg-gradient-to-r from-gray-400 to-gray-800  dark:from-gray-500 dark:to-gray-700 mx-auto mb-6"
           ></motion.div>
           <motion.p
             variants={fadeInUpVariants}
@@ -180,20 +180,20 @@ const Portfolio = () => {
               className="h-full"
             >
               <Card className="overflow-hidden card-hover h-full flex flex-col shadow-lg border-transparent hover:border-gray-900/50 transition-all duration-300 bg-white dark:bg-gray-800">
-                <CardHeader className="p-0">
-                  <div 
-                    className="aspect-[16/9] w-full bg-gray-200 dark:bg-gray-700 overflow-hidden relative"
-                    style={{
-                      backgroundImage: `url(${item.imageUrl})`,
-                      backgroundPosition: `-${item.imageCrop.x}px -${item.imageCrop.y}px`,
-                      backgroundSize: `auto ${item.imageCrop.height * (270 / item.imageCrop.width)}px` // Assuming original image width is 1152px
-                    }}
-                  >
-                    <div className="absolute inset-0 bg-black/10 flex items-center justify-center opacity-0 hover:opacity-100 transition-opacity duration-300">
-                      
-                    </div>
-                  </div>
-                </CardHeader>
+              <CardHeader className="p-0">
+  <div 
+    className="aspect-[16/9] w-full bg-gray-200 dark:bg-gray-700 overflow-hidden relative"
+    style={{
+      backgroundImage: `url(${item.imageUrl})`,
+      backgroundPosition: `center`,
+      backgroundSize: `cover`
+    }}
+  >
+    <div className="absolute inset-0 bg-black/20 flex items-center justify-center opacity-0 hover:opacity-100 transition-opacity duration-300">
+      {/* conteúdo opcional */}
+    </div>
+  </div>
+</CardHeader>
                 <CardContent className="flex-grow p-4">
                   <CardDescription className="text-xs uppercase tracking-wider text-gray-400 mb-1">{item.category}</CardDescription>
                   <CardTitle className="text-lg font-semibold mb-2">{item.title}</CardTitle>
@@ -202,7 +202,7 @@ const Portfolio = () => {
                   <Button
                     variant="outline"
                     size="sm"
-                    className="w-full border-gray-900 text-gray-600 hover:bg-gray-400 dark:border-gray-900 dark:text-gray-600 dark:hover:bg-gray-400"
+                    className="w-full border-gray-200 text-gray-600 hover:bg-gray-200 dark:border-gray-900 dark:text-gray-200 dark:hover:bg-gray-600"
                     onClick={() => window.open(`https://${item.link}`, "_blank")}
                   >
                     Visitar Site <ExternalLink className="ml-2 h-4 w-4" />
@@ -223,7 +223,7 @@ const Portfolio = () => {
         >
           <Button
             size="lg"
-            className="bg-gradient-to-r from-gray-600 to-gray-600 hover:from-gray-700 hover:to-gray-700 text-white shadow-lg px-10 py-6 text-lg"
+            className="bg-gradient-to-r from-gray-800 to-gray-600 hover:from-gray-600 hover:to-gray-800 text-white shadow-lg px-10 py-6 text-base"
             onClick={scrollToContact}
           >
             Gostou? Vamos Criar o Seu Projeto!

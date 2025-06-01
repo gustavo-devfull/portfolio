@@ -39,14 +39,14 @@ const About = () => {
           <motion.div
             variants={fadeInUpVariants}
             custom={1}
-            className="w-20 h-1 bg-gradient-to-r from-gray-600 to-gray-600 mx-auto mb-6"
+            className="w-20 h-1 bg-gradient-to-r from-gray-400 to-gray-800  dark:from-gray-500 dark:to-gray-700 mx-auto mb-6"
           ></motion.div>
           <motion.p
             variants={fadeInUpVariants}
             custom={2}
             className="max-w-3xl mx-auto text-gray-600 dark:text-gray-300"
           >
-            A <span className="gradient-text font-bold">GPRETO</span> Soluções Digitais é uma empresa especializada em desenvolvimento web de alta qualidade e rapidez, com mais de 20 anos de experiência no mercado digital.
+            A <span className="gradient-text font-bold dark:text-gray-200">GPRETO</span> Soluções Digitais é uma empresa especializada em desenvolvimento web de alta qualidade e rapidez, com mais de 20 anos de experiência no mercado digital.
           </motion.p>
         </motion.div>
 
@@ -141,7 +141,7 @@ const About = () => {
         >
           <Button
             size="lg"
-            className="bg-gradient-to-r from-gray-600 to-gray-600 hover:from-gray-700 hover:to-gray-700 text-white shadow-lg"
+            className="bg-gradient-to-r from-gray-600 to-gray-800 hover:from-gray-800 hover:to-gray-600 text-white shadow-lg text-base"
             onClick={() => {
               const contactSection = document.getElementById("contact");
               if (contactSection) {
