@@ -3,8 +3,47 @@ import { motion } from "framer-motion";
 import { Send, Phone, Mail, MapPin, Linkedin, Instagram, Facebook } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { useToast } from "@/components/ui/use-toast";
+import emailjs from 'emailjs-com';
+
+
 
 const Contact = () => {
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    setIsSubmitting(true);
+  
+    try {
+      await emailjs.send(
+        'service_ps6nd7n',
+        'template_xg78p2e',
+        {
+          from_name: formData.name,
+          reply_to: formData.email,
+          subject: formData.subject,
+          message: formData.message,
+        },
+        'vOcAkPFycnS_Hh97Q'
+      );
+  
+      toast({
+        title: "Mensagem enviada com sucesso!",
+        description: "Obrigado por entrar em contato com a GPRETO.",
+        duration: 5000,
+        className: "bg-green-500 text-white",
+      });
+  
+      setFormData({ name: "", email: "", subject: "", message: "" });
+    } catch (error) {
+      toast({
+        title: "Erro ao enviar mensagem",
+        description: "Não foi possível enviar o e-mail.",
+        variant: "destructive",
+      });
+    } finally {
+      setIsSubmitting(false);
+    }
+  };
   const { toast } = useToast();
   const [formData, setFormData] = useState({
     name: "",
@@ -19,35 +58,35 @@ const Contact = () => {
     setFormData((prev) => ({ ...prev, [name]: value }));
   };
 
-  const handleSubmit = async (e) => {
-    e.preventDefault();
-    setIsSubmitting(true);
+  // const handleSubmit = async (e) => {
+  //   e.preventDefault();
+  //   setIsSubmitting(true);
 
-    try {
-      await new Promise(resolve => setTimeout(resolve, 1500));
-      toast({
-        title: "Mensagem enviada com sucesso!",
-        description: "Obrigado por entrar em contato com a GPRETO. Responderemos em breve.",
-        duration: 5000,
-        className: "bg-green-500 text-white",
-      });
-      setFormData({
-        name: "",
-        email: "",
-        subject: "",
-        message: "",
-      });
-    } catch (error) {
-      toast({
-        title: "Erro ao enviar mensagem",
-        description: "Houve um problema ao enviar sua mensagem. Por favor, tente novamente mais tarde ou utilize um dos nossos outros canais de contato.",
-        variant: "destructive",
-        duration: 5000,
-      });
-    } finally {
-      setIsSubmitting(false);
-    }
-  };
+  //   try {
+  //     await new Promise(resolve => setTimeout(resolve, 1500));
+  //     toast({
+  //       title: "Mensagem enviada com sucesso!",
+  //       description: "Obrigado por entrar em contato com a GPRETO. Responderemos em breve.",
+  //       duration: 5000,
+  //       className: "bg-green-500 text-white",
+  //     });
+  //     setFormData({
+  //       name: "",
+  //       email: "",
+  //       subject: "",
+  //       message: "",
+  //     });
+  //   } catch (error) {
+  //     toast({
+  //       title: "Erro ao enviar mensagem",
+  //       description: "Houve um problema ao enviar sua mensagem. Por favor, tente novamente mais tarde ou utilize um dos nossos outros canais de contato.",
+  //       variant: "destructive",
+  //       duration: 5000,
+  //     });
+  //   } finally {
+  //     setIsSubmitting(false);
+  //   }
+  // };
 
   const fadeInUpVariants = {
     hidden: { opacity: 0, y: 20 },
